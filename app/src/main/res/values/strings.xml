@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Hotels-Prime Vista</string>
+    <string name="card_name_1">GOA</string>
+    <string name="card_name_2">CHENNAI</string>
+    <string name="card_name_3">MUMBAI</string>
+    <string name="card_name_4">DELHI</string>
+</resources>

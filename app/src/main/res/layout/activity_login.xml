@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FD04111D"
+    tools:context=".login">
+
+    <TextView
+        android:id="@+id/logintext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="234dp"
+        android:fontFamily="@font/baloo_bhaijaan"
+        android:text="LOGIN TO EXPLORE!"
+        android:textColor="#36B1B5"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="253dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#B465FBC7"
+        android:ems="10"
+        android:hint="Enter your phone number"
+        android:inputType="phone"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#ADEEFFFC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logintext" />
+
+    <EditText
+        android:id="@+id/editTextNumberPassword"
+        android:layout_width="253dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#B465FBC7"
+        android:ems="10"
+        android:hint="OTP"
+        android:inputType="numberPassword"
+        android:textColorHint="#ADE6FFFB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <TextView
+        android:id="@+id/orsignInwith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="or sign in with"
+        android:textColor="#FBF6F6"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="41dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/donthaveacc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/googlepng" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="42dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/donthaveacc"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:srcCompat="@drawable/facebooklogo" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="42dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/donthaveacc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/twitterlogo" />
+
+    <TextView
+        android:id="@+id/donthaveacc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="296dp"
+        android:text="dont't have an account?"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="createAccount"
+        android:text="create one"
+
+        android:textColor="#64B6F4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/donthaveacc" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="248dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="7dp"
+        android:backgroundTint="#36B1B5"
+        android:text="login"
+        android:onClick="locations"
+        app:layout_constraintBottom_toTopOf="@+id/orsignInwith"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberPassword"
+        app:layout_constraintVertical_bias="0.467" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="520dp"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/loginactbg" />
+</androidx.constraintlayout.widget.ConstraintLayout>
