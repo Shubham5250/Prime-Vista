@@ -6,19 +6,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class location_hotels extends AppCompatActivity {
+public class goa_room_booking extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_location_hotels);
-
-
+        setContentView(R.layout.activity_goa_room_booking);
     }
 
-    public void goaRooms(View view){
-        Intent intent = new Intent(this,goa_room_booking.class);
-        startActivity(intent);
 
+    public void login(View view){
+        Intent intent = new Intent(this,login.class);
+        startActivity(intent);
     }
 }

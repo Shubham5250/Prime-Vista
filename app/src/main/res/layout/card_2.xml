@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:onClick="login">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -12,7 +13,7 @@
         app:srcCompat="@drawable/chennai" />
 
     <TextView
-        android:id="@+id/goatext"
+        android:id="@+id/chennai"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"

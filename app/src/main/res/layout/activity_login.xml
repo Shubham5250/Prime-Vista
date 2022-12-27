@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="234dp"
         android:fontFamily="@font/baloo_bhaijaan"
-        android:text="LOGIN TO EXPLORE!"
+        android:text="LOGIN TO BOOK A STAY!"
         android:textColor="#36B1B5"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"

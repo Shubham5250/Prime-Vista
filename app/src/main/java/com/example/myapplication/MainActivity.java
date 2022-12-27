@@ -26,5 +26,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void locations(View view){
+        Intent intent = new Intent(this,location_hotels.class);
+        startActivity(intent);
+    }
 }
 

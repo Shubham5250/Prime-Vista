@@ -1,7 +1,11 @@
 <resources>
     <string name="app_name">Hotels-Prime Vista</string>
-    <string name="card_name_1">GOA</string>
-    <string name="card_name_2">CHENNAI</string>
-    <string name="card_name_3">MUMBAI</string>
-    <string name="card_name_4">DELHI</string>
+    <string name="card_name_1">Prime Vista-Goa</string>
+    <string name="card_name_2">Prime Vista-Chennai</string>
+    <string name="card_name_3">Prime Vista-Mumbai</string>
+    <string name="card_name_4">Prime Vista-Delhi</string>
+    <string name="delux_rooms_price"><b>₹2,999/night</b></string>
+    <string name="executive_rooms_price"><b>₹5,999/night</b></string>
+    <string name="premier_suite_rooms"><b>₹7,999/night</b></string>
+    <string name="searchhotels_header">Select among the widest range of hotels</string>
 </resources>

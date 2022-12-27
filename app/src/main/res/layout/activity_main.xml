@@ -8,13 +8,13 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="559dp"
-        android:layout_height="793dp"
+        android:layout_width="583dp"
+        android:layout_height="971dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/primevistaimgback" />
+        app:srcCompat="@drawable/primevistahome" />
 
     <TextView
         android:id="@+id/primevista"
@@ -46,28 +46,14 @@
         android:id="@+id/loginbut"
         android:layout_width="252dp"
         android:layout_height="71dp"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="424dp"
         android:backgroundTint="#36B1B5"
-        android:onClick="login"
-        android:text="Sign in"
+        android:onClick="locations"
+        android:text="expolre"
         android:textColor="#ffffff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subheadhome" />
-
-    <Button
-        android:id="@+id/createAccount"
-        android:layout_width="252dp"
-        android:layout_height="71dp"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="#36B1B5"
-        android:onClick="createAccount"
-        android:text="create account"
-        android:textColor="#ffffff"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginbut" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
