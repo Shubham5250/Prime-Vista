@@ -5,7 +5,7 @@
     <string name="card_name_3">Prime Vista-Mumbai</string>
     <string name="card_name_4">Prime Vista-Delhi</string>
     <string name="delux_rooms_price"><b>₹2,999/night</b></string>
-    <string name="executive_rooms_price"><b>₹5,999/night</b></string>
+    <string name="executive_rooms_price"><b>₹9,999/night</b></string>
     <string name="premier_suite_rooms"><b>₹7,999/night</b></string>
     <string name="searchhotels_header">Select among the widest range of hotels</string>
 </resources>
