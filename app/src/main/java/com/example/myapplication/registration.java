@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -87,7 +88,7 @@ public class registration extends AppCompatActivity {
     }
 
     private void sendUserToNextActivity() {
-        Intent intent = new Intent(registration.this,MainActivity.class);
+        Intent intent = new Intent(registration.this,goa_room_booking.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
 
@@ -96,6 +97,7 @@ public class registration extends AppCompatActivity {
     public void login(View view){
         Intent intent = new Intent(this,login.class);
         startActivity(intent);
+        Animatoo.INSTANCE.animateSwipeRight(this);
 
     }
 

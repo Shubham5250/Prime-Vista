@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -18,17 +20,16 @@ public class MainActivity extends AppCompatActivity {
     public void login(View view){
         Intent intent = new Intent(this,login.class);
         startActivity(intent);
+
     }
 
-    public void createAccount(View view){
-        Intent intent = new Intent(this,create_account.class);
-        startActivity(intent);
-    }
+
 
 
     public void locations(View view){
         Intent intent = new Intent(this,location_hotels.class);
         startActivity(intent);
+        Animatoo.INSTANCE.animateSplit(this);
     }
 }
 

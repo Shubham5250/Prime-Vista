@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+
 public class location_hotels extends AppCompatActivity {
 
     @Override
@@ -19,6 +21,7 @@ public class location_hotels extends AppCompatActivity {
     public void goaRooms(View view){
         Intent intent = new Intent(this,goa_room_booking.class);
         startActivity(intent);
+        Animatoo.INSTANCE.animateSwipeLeft(this);
 
     }
 }
