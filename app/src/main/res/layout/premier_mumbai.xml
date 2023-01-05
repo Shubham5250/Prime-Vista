@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="match_parent"
+        android:layout_height="218dp"
+        android:background="@drawable/premier_mumbai" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="156dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingEnd="8dp"
+            android:text="Premier room"
+            android:textAlignment="textEnd"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="560 SQ FT | 52 SQ M"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/delux_price_text"
+            android:layout_width="183dp"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:paddingEnd="15dp"
+            android:text="@string/premier_mumbai_price"
+            android:textAlignment="textEnd"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="187dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="#36B1B5"
+            android:text="Book now"
+            android:onClick="login"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -24,4 +24,10 @@ public class location_hotels extends AppCompatActivity {
         Animatoo.INSTANCE.animateSwipeLeft(this);
 
     }
+    public void mumbaiRooms(View view){
+        Intent intent = new Intent(this,mumbai_rooms.class);
+        startActivity(intent);
+        Animatoo.INSTANCE.animateSwipeLeft(this);
+
+    }
 }
