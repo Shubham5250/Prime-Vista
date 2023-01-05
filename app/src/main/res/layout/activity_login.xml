@@ -27,6 +27,7 @@
         android:layout_height="52dp"
         android:backgroundTint="#B465FBC7"
         android:ems="10"
+
         android:hint="Enter your registered email"
         android:inputType="textEmailAddress"
         android:textColor="#F8F8F8"

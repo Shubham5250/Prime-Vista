@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
         <item>@font/baloo_bhaijaan</item>
+        <item>@font/balsamiq_sans_bold</item>
+        <item>@font/hammersmith_one</item>
+        <item>@font/rocknroll_one</item>
+        <item>@font/ubuntu_bold</item>
         <item>@font/ubuntu_light</item>
     </array>
 </resources>

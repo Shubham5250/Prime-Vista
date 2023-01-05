@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="imageViewMain" type="id" />
+    <item name="linearLayout" type="id" />
+    <item name="custompopup" type="id" />
+</resources>

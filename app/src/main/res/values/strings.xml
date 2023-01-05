@@ -10,5 +10,24 @@
     <string name="premier_mumbai_price"><b>₹12,999/night</b></string>
     <string name="executive_rooms_price"><b>₹9,999/night</b></string>
     <string name="premier_suite_rooms"><b>₹7,999/night</b></string>
+    <string name="delhi_delux"><b>₹14,999</b>/night</string>
+    <string name="delhi_premier"><b>₹17,999/night</b></string>
+    <string name="executive_delhi"><b>₹21,999/night</b></string>
+    <string name="head_delhi_text"><b>Hotel Prime Vista</b> - DELHI</string>
+    <string name="details_delhi_text">Details</string>
+    <string name="amenities_delhi_text">Amenities</string>
+    <string name="delux_delhi_text">Deluxe Room</string>
+    <string name="guest_score_delux_delhi_text">Gu</string>
+
+
+
+
+    <string name="delux_delhi_reviews">(278 reviews)</string>
+    <string name="details_info_delhi_text">Deluxe Rooms-The comfort you truly will admire, located at prime location with eye soothing view and best to have a short stay while holidaying in Delhi.\n\t-560 SQ FT | 52 SQ M\n\t-1X King sized bed \n\t-Italian | Swish | Indian | American breakfast with dinner</string>
+
+    <string name="delhi_hotel_location">Bell\'s Park, Cannought Place, New Delhi</string>
+
+
+
     <string name="searchhotels_header">Select among the widest range of hotels</string>
 </resources>
