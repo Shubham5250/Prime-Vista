@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical">
 
     <TextView
@@ -27,7 +27,7 @@
         android:layout_marginStart="19dp"
         android:layout_marginTop="2dp"
         android:layout_marginEnd="286dp"
-        android:text="@string/delux_delhi_text"
+        android:text="@string/premier_delhi_text"
         android:textColor="#E60E1F53"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,15 +94,15 @@
         android:layout_marginStart="2dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="184dp"
-        android:text="@string/delux_delhi_reviews"
+        android:text="@string/premier_delhi_reviews"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView15"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <ImageView
         android:id="@+id/imageView16"
-        android:layout_width="26dp"
-        android:layout_height="25dp"
+        android:layout_width="25dp"
+        android:layout_height="24dp"
         android:layout_marginStart="19dp"
         android:layout_marginEnd="3dp"
         app:layout_constraintEnd_toStartOf="@+id/textView12"
@@ -147,7 +147,7 @@
         android:layout_marginStart="19dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="22dp"
-        android:text="@string/details_info_delhi_text"
+        android:text="@string/premier_info_delhi_text"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -182,7 +182,7 @@
         app:layout_constraintEnd_toStartOf="@+id/imageView18"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15"
-        app:layout_constraintVertical_bias="0.736"
+        app:layout_constraintVertical_bias="0.666"
         app:srcCompat="@drawable/ic_baseline_wifi_24" />
 
     <ImageView
@@ -190,7 +190,7 @@
         android:layout_width="33dp"
         android:layout_height="36dp"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="5dp"
         app:layout_constraintEnd_toStartOf="@+id/imageView19"
         app:layout_constraintStart_toEndOf="@+id/imageView17"
@@ -207,7 +207,7 @@
         app:layout_constraintEnd_toStartOf="@+id/imageView20"
         app:layout_constraintStart_toEndOf="@+id/imageView18"
         app:layout_constraintTop_toBottomOf="@+id/textView15"
-        app:layout_constraintVertical_bias="0.312"
+        app:layout_constraintVertical_bias="0.375"
         app:srcCompat="@drawable/ic_baseline_food_bank_24" />
 
     <ImageView
@@ -236,36 +236,30 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="153dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="3dp"
+        android:layout_width="154dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="44dp"
         android:backgroundTint="#E60E1F53"
-        android:onClick="showPopUp"
         android:text="select rooms"
+        android:onClick="showPopUp"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView19"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView19" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="18dp"
-        android:background="@drawable/edit_text_background"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
         android:fontFamily="@font/hammersmith_one"
-        android:padding="15dp"
-        android:text="@string/delhi_delux"
+        android:text="@string/delhi_premier"
         android:textColor="#E60E1F53"
         android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView18"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView18" />
 </androidx.constraintlayout.widget.ConstraintLayout>

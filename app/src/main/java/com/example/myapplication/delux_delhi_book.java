@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.app.Dialog;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -56,6 +57,7 @@ public class delux_delhi_book extends AppCompatActivity {
     }
 
     public void showPopUp(View view){
+
         TextView txtclose;
         myDialog.setContentView(R.layout.custompopup);
         txtclose=myDialog.findViewById(R.id.txtclose);
@@ -77,37 +79,53 @@ public class delux_delhi_book extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                btn1.setBackgroundResource(R.color.app_theme_COLOR);
+
+
+
+//                if(btn1.isEnabled()){
+//                    btn1.setBackgroundResource(R.drawable.change_bg_on_click);
+//                    btn1.setTextColor(Color.parseColor("#FFFFFF"));
+//                }
+                if(btn1.isPressed()){
+                    btn1.setBackgroundResource(R.drawable.change_bg_on_click);
+                    btn1.setTextColor(Color.parseColor("#FFFFFF"));
+                }
+
             }
         });
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                btn2.setBackgroundResource(R.drawable.change_bg_on_click);
+                btn2.setTextColor(Color.parseColor("#FFFFFF"));
             }
         });
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                btn3.setBackgroundResource(R.drawable.change_bg_on_click);
+                btn3.setTextColor(Color.parseColor("#FFFFFF"));
             }
         });
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                btn4.setBackgroundResource(R.drawable.change_bg_on_click);
+                btn4.setTextColor(Color.parseColor("#FFFFFF"));
             }
         });
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                btn5.setBackgroundResource(R.drawable.change_bg_on_click);
+                btn5.setTextColor(Color.parseColor("#FFFFFF"));
             }
         });
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                btn6.setBackgroundResource(R.drawable.change_bg_on_click);
+                btn6.setTextColor(Color.parseColor("#FFFFFF"));
             }
         });
     }

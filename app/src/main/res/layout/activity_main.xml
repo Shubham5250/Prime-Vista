@@ -35,18 +35,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/primevista" />
 
-    <Button
-        android:id="@+id/loginbut"
-        android:layout_width="252dp"
-        android:layout_height="71dp"
-        android:layout_marginTop="424dp"
-        android:backgroundTint="#36B1B5"
-        android:onClick="locations"
-        android:text="expolre"
-        android:textColor="#ffffff"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subheadhome" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

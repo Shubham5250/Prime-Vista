@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,14 +20,18 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class registration extends AppCompatActivity {
+    public static String PREF_NAME = "MyPrefsFile";
 
-    EditText inputEmail,inputPassword,confirmPassword;
+    EditText inputEmail,inputPassword,confirmPassword,inputName;
     Button register;
     String  emailpattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     ProgressDialog progressDialog;
 
     FirebaseAuth mAuth;
     FirebaseUser mUser;
+
+    public static final String EXTRA_NAME = "com.example.myapplication.extra.inputName";
+    public static final String EXTRA_EMAIL = "com.example.myapplication.extra.inputEmail";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +48,16 @@ public class registration extends AppCompatActivity {
 
         register.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+
+                    public void onClick(View v) {
+
+                        SharedPreferences sharedPreferences = getSharedPreferences(registration.PREF_NAME,0);
+                        SharedPreferences.Editor editor = sharedPreferences.edit();
+
+                        editor.putBoolean("hasRegistered",true);
+                        editor.apply();
+                        startActivity(new Intent(registration.this,location_hotels.class));
+                        finish();
                 PerfAuth();
             }
         });
@@ -88,20 +102,32 @@ public class registration extends AppCompatActivity {
     }
 
     private void sendUserToNextActivity() {
-        Intent intent = new Intent(registration.this,goa_room_booking.class);
+        Intent intent = new Intent(registration.this,user_profile.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
+        Animatoo.INSTANCE.animateSwipeRight(registration.this);
 
     }
 
     public void login(View view){
-        Intent intent = new Intent(this,login.class);
+        Intent intent = new Intent(registration.this,login.class);
         startActivity(intent);
-        Animatoo.INSTANCE.animateSwipeRight(this);
+        Animatoo.INSTANCE.animateSwipeRight(registration.this);
 
     }
 
+    public void userProfile(View view){
+        Intent i = new Intent(this,user_profile.class);
+        inputEmail = findViewById(R.id.loginEmail);
+        inputName = findViewById(R.id.inputName);
+        String nameText = inputName.getText().toString();
+        String emailText = inputEmail.getText().toString();
+        i.putExtra(EXTRA_NAME,nameText);
+        i.putExtra(EXTRA_EMAIL,emailText);
 
+        startActivity(i);
+        Animatoo.INSTANCE.animateSlideLeft(this);
+    }
 
 
 }

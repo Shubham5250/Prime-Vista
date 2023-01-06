@@ -3,21 +3,34 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+
 public class delhi_rooms extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_delhi_rooms);
+
+
     }
 
 
-    public void login(View view){
-        Intent intent = new Intent(this,login.class);
+    public void delux_delhi_book_room(View view){
+        Intent intent = new Intent(this,delux_delhi_book.class);
         startActivity(intent);
+        Animatoo.INSTANCE.animateZoom(this);
 
+    }
+
+    public void user(View v){
+        Intent i = new Intent(this,user_profile.class);
+        startActivity(i);
     }
 }

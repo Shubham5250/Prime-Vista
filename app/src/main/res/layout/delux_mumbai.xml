@@ -54,9 +54,9 @@
             android:layout_width="187dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:background="#36B1B5"
-            android:text="Book now"
+            android:background="#E60E1F53"
             android:onClick="login"
+            android:text="Book now"
             android:textColor="#ffffff" />
 
     </LinearLayout>
