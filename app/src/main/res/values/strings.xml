@@ -21,6 +21,8 @@
 
     <string name="guest_score_delux_delhi_text">Gu</string>
     <string name="profile_welcome_txt">Hello👋,</string>
+    <string name="fromDate">From-</string>
+    <string name="toDate">To-</string>
 
 
     <string name="delux_delhi_reviews">(278 reviews)</string>

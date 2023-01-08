@@ -242,7 +242,7 @@
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="3dp"
         android:backgroundTint="#E60E1F53"
-        android:onClick="showPopUp"
+        android:onClick="showPopUps"
         android:text="select rooms"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"

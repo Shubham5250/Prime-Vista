@@ -15,10 +15,9 @@ import java.util.ArrayList;
 
 public class SliderAdapter extends PagerAdapter {
 
-    int[] images;
+    int images[];
     LayoutInflater layoutInflater;
     Context context;
-    Button delux_delhi_rooms;
     public SliderAdapter(int[] images, Context context)  {
         this.images = images;
         this.layoutInflater = LayoutInflater.from(context);
