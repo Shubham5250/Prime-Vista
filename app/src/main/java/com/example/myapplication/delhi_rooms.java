@@ -28,9 +28,12 @@ public class delhi_rooms extends AppCompatActivity {
         Animatoo.INSTANCE.animateZoom(this);
 
     }
+    public void pemier_delhi_book(View view){
+        Intent intent = new Intent(this,pemier_delhi_book.class);
+        startActivity(intent);
+        Animatoo.INSTANCE.animateZoom(this);
 
-    public void user(View v){
-        Intent i = new Intent(this,user_profile.class);
-        startActivity(i);
     }
+
+
 }

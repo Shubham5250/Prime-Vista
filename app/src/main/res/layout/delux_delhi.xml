@@ -50,7 +50,7 @@
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/button12"
+            android:id="@+id/delux_delhi_rooms"
             android:layout_width="187dp"
             android:layout_height="35dp"
             android:layout_gravity="center"

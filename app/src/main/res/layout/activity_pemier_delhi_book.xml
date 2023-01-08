@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,25 +10,37 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="214dp">
 
             <androidx.viewpager.widget.ViewPager
-                android:id="@+id/viewpager"
+                android:id="@+id/viewpager2"
 
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-
+                <include layout="@layout/items_premier_delhi"/>
 
             </androidx.viewpager.widget.ViewPager>
 
 
         </RelativeLayout>
 
-        <include layout="@layout/premier_delhi_card_details" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="538dp">
+
+            <include
+                android:id="@+id/include"
+                layout="@layout/premier_delhi_card_details"
+                tools:layout_editor_absoluteX="-31dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </LinearLayout>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

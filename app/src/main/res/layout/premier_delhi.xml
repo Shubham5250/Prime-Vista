@@ -56,6 +56,7 @@
             android:layout_gravity="center"
             android:background="#E60E1F53"
             android:text="Book now"
+            android:onClick="pemier_delhi_book"
             android:textColor="#ffffff" />
 
     </LinearLayout>

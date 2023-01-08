@@ -29,12 +29,12 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="578dp">
+        android:layout_height="538dp">
 
         <include
             android:id="@+id/include"
             layout="@layout/delhi_deluxe_card_details"
-            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteX="-31dp"
             tools:layout_editor_absoluteY="0dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

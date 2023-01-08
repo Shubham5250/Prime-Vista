@@ -13,13 +13,12 @@ import androidx.viewpager.widget.PagerAdapter;
 
 import java.util.ArrayList;
 
-public class SliderAdapter extends PagerAdapter {
+public class Slideradapter_premier_delhi extends PagerAdapter {
 
     int[] images;
     LayoutInflater layoutInflater;
     Context context;
-    Button delux_delhi_rooms;
-    public SliderAdapter(int[] images, Context context)  {
+    public Slideradapter_premier_delhi(int[] images, Context context)  {
         this.images = images;
         this.layoutInflater = LayoutInflater.from(context);
         this.context = context;
@@ -39,26 +38,26 @@ public class SliderAdapter extends PagerAdapter {
 
 
 
-        @NonNull
-        @Override
-        public Object instantiateItem(@NonNull ViewGroup container, int position) {
+    @NonNull
+    @Override
+    public Object instantiateItem(@NonNull ViewGroup container, int position) {
 
 
 
-            View myImageLayout = layoutInflater.inflate(R.layout.item_delux_delhi,container,false);
-            ImageView imageView = myImageLayout.findViewById(R.id.imageViewMain);
+        View myImageLayout = layoutInflater.inflate(R.layout.items_premier_delhi,container,false);
+        ImageView imageView = myImageLayout.findViewById(R.id.img2);
 
 
-            if(Build.VERSION.SDK_INT>= Build.VERSION_CODES.LOLLIPOP){
-                imageView.setImageDrawable(context.getDrawable(images[position]));
-            }
-            else{
-                imageView.setImageDrawable(context.getResources().getDrawable(images[position]));
-            }
-
-            container.addView(myImageLayout);
-            return myImageLayout;
+        if(Build.VERSION.SDK_INT>= Build.VERSION_CODES.LOLLIPOP){
+            imageView.setImageDrawable(context.getDrawable(images[position]));
         }
+        else{
+            imageView.setImageDrawable(context.getResources().getDrawable(images[position]));
+        }
+
+        container.addView(myImageLayout);
+        return myImageLayout;
+    }
 
     @Override
     public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
