@@ -14,61 +14,43 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Locale;
 import java.util.Timer;
 import java.util.TimerTask;
 
 public class delux_delhi_book extends AppCompatActivity {
 
     Dialog myDialog;
-    EditText fromDate;
     EditText toDate;
 
     int y;
     int m;
     int d;
-//    int y1;
-//    int m1;
+
     ViewPager viewPager;
     int images[]={R.drawable.delux_delhi_bath1,R.drawable.delux_delhi_food,R.drawable.delhi_delux_dining1,R.drawable.delux_delhi_view};
     int currentPageCounter = 0;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_delux_delhi_book);
         myDialog = new Dialog(this);
         viewPager = findViewById(R.id.viewpager);
         viewPager.setAdapter(new SliderAdapter(images,delux_delhi_book.this));
 
-        fromDate = findViewById(R.id.fromDate);
-        toDate = findViewById(R.id.todate);
-        Calendar calendar = Calendar.getInstance();
-        int year = calendar.get(Calendar.YEAR);
-        int month = calendar.get(Calendar.MONTH);
-
-        int day = calendar.get(Calendar.DAY_OF_MONTH);
 
 
-
-
-        fromDate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                DatePickerDialog datePickerDialog = new DatePickerDialog( delux_delhi_book.this,new DatePickerDialog.OnDateSetListener() {
-                    @Override
-                    public void onDateSet(DatePicker datePicker, int year, int month, int day) {
-                        month = month+1;
-                        String date = day+"/"+month+"/"+year;
-                        fromDate.setText(date);
-                    }
-                },year,month,day);
-                datePickerDialog.show();
-            }
-        });
 
 //
+////
 //        toCal.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
@@ -110,6 +92,7 @@ public class delux_delhi_book extends AppCompatActivity {
 
 
     }
+
 
     public void showPopUps(View view){
 

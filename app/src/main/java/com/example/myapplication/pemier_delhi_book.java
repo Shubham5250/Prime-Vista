@@ -165,33 +165,11 @@ public class pemier_delhi_book extends AppCompatActivity {
     }
 
 
-    public void date(View view){
-        fromDate = findViewById(R.id.fromDate);
 
-        final Calendar c= Calendar.getInstance();
-
-        y = c.get(Calendar.YEAR);
-        m = c.get(Calendar.MONTH);
-        d = c.get(Calendar.DATE);
-        fromDate.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-
-
-                DatePickerDialog g = new DatePickerDialog(pemier_delhi_book.this, new DatePickerDialog.OnDateSetListener() {
-                    @Override
-                    public void onDateSet(DatePicker datePicker, int d, int m, int y) {
-                        fromDate.setText(d+"/"+m+"/+"+y);
-                    }
-                },d,m,y);
-                g.show();
-            }
-        });
 
     }
 
 
 
-}
+
 
