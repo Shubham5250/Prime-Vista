@@ -28,6 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
+        android:fontFamily="@font/ubuntu_bold"
         android:text="The largest hotel chain of India"
         android:textColor="#AEDFCB"
         app:layout_constraintEnd_toEndOf="parent"

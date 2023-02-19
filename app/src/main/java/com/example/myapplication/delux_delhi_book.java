@@ -48,26 +48,6 @@ public class delux_delhi_book extends AppCompatActivity {
 
 
 
-
-//
-////
-//        toCal.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                y1 = c.get(Calendar.YEAR);
-//                m1 = c.get(Calendar.MONTH);
-//                d1 = c.get(Calendar.DATE);
-//
-//                DatePickerDialog g1 = new DatePickerDialog(delux_delhi_book.this, new DatePickerDialog.OnDateSetListener() {
-//                    @Override
-//                    public void onDateSet(DatePicker view, int d1, int m1, int y1) {
-//                        toDate.setText(d1+"/"+m1+"/"+y1);
-//                    }
-//                },d1,m1,y1);
-//                g1.show();
-//            }
-//        });
-
         final Handler handler = new Handler();
         final Runnable runnable = new Runnable() {
             @Override
